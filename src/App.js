@@ -7,9 +7,9 @@ import getConfig from "./config";
 import axios from "axios";
 import { nanoid } from "nanoid";
 
-const { networkId } = getConfig(process.env.NODE_ENV || "development");
+const { networkId } = getConfig("development");
 
-//NFT storage quill api
+//NFT storage nxt50 api
 const nftStorageToken =
   "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJkaWQ6ZXRocjoweEIyMTFiRjY2NTNjZTcyODEyZGI3MjRGMDkwODUzODM1QjBGOTE0MUUiLCJpc3MiOiJuZnQtc3RvcmFnZSIsImlhdCI6MTYzNzY0NDQzODQ0NSwibmFtZSI6InF1aWxsIn0.zCASQI4jOjLG98tCmI1TkJkJbHGyOS-BNClgQ8jwN2M";
 
@@ -28,23 +28,14 @@ const getImageBlob = async (imageInput) => {
 const Login = () => {
   return (
     <main>
-      <h1>Welcome to NEAR!</h1>
-      <p>
-        This is{" "}
-        <a
-          href="https://twitter.com/hashtag/NEARvember"
-          target="_blank"
-          style={{
-            backgroundColor: "white",
-            borderRadius: "5px",
-            padding: "1px 5px",
-          }}
-        >
-          #NEARvember
-        </a>{" "}
-        Challange 5.
-      </p>
-      <p>In this app you can create your own image-based NFT!</p>
+      <h1>Welcome to NFTup!</h1>
+
+      <p>Now you can create your own NFT with Near Protocol</p>
+      {/* <img src={"https://cdn3d.iconscout.com/3d/free/thumb/crypto-minting-3678196-3061791@0.png"} alt="mint"
+        height={150}
+        width={150}
+        style={{ alignSelf: 'center' }}
+      /> */}
       <p>
         To make use of the NEAR blockchain, you need to sign in. The button
         below will sign you in using NEAR Wallet.
@@ -66,7 +57,7 @@ const App = () => {
     const { titleInput } = e.target.elements;
 
     const title = titleInput.value.trim();
-    
+
     /////////////////////
     // API upload NFT storage
 
@@ -90,7 +81,7 @@ const App = () => {
     }
 
     const media = `https://${rep.data.value.cid}.ipfs.dweb.link/`;
-    
+
     //NFT fixing
     // const media = `https://bafkreicuohit6m7btpcxtkdfygtz22gtlnct7n6kyfokqtrflmi22gcd3i.ipfs.dweb.link/`;
 
@@ -131,7 +122,12 @@ const App = () => {
       </div>
       <div style={{ display: "flex", justifyContent: "center" }}>
         <form onSubmit={onSubmit}>
-          <h1>Mint your NFT!</h1>
+          <h1>Mint your NFT</h1>
+          {/* <img src={"https://cdn3d.iconscout.com/3d/free/thumb/crypto-minting-3678196-3061791@0.png"} alt="mint"
+            height={150}
+            width={150}
+            style={{ alignSelf: 'center' }}
+          /> */}
           {error && (
             <p
               style={{
@@ -146,13 +142,13 @@ const App = () => {
           )}
           <table>
             <tbody>
-              <tr> 
-              <td>
-                  
+              <tr>
+                <td>
+
                 </td>
                 <td>
-                {/* <img src={"https://d1-invdn-com.akamaized.net/content/picb7910754dc84b11318f7de5e0f2f5299.jpg"} alt="Logo" />; */}
-                </td> 
+                  {/* <img src={"https://d1-invdn-com.akamaized.net/content/picb7910754dc84b11318f7de5e0f2f5299.jpg"} alt="Logo" />; */}
+                </td>
               </tr>
               <tr>
                 <td>

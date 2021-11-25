@@ -36,7 +36,7 @@ impl Contract {
             owner_id,
             NFTContractMetadata {
                 spec: NFT_METADATA_SPEC.to_string(),
-                name: "NFT Challenge 05".to_string(),
+                name: "NFTup".to_string(),
                 symbol: "NFT".to_string(),
                 icon: None,
                 base_uri: None,

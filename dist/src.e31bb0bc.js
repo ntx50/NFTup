@@ -46775,8 +46775,7 @@ __exportStar(require("./browser-connect"), exports);
 require("error-polyfill");
 
 },{"./key_stores/browser-index":"../node_modules/near-api-js/lib/key_stores/browser-index.js","./common-index":"../node_modules/near-api-js/lib/common-index.js","./browser-connect":"../node_modules/near-api-js/lib/browser-connect.js","error-polyfill":"../node_modules/error-polyfill/index.js"}],"config.js":[function(require,module,exports) {
-const CONTRACT_NAME = "dev-1637650218025-20720599272767" || "quill.imlang7.testnet"; // const CONTRACT_NAME = "quill.imlang7.testnet";
-
+const CONTRACT_NAME = "imlang12.testnet";
 console.log("contractName", CONTRACT_NAME);
 
 function getConfig(env) {
@@ -46861,7 +46860,7 @@ var _config = _interopRequireDefault(require("./config"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-const nearConfig = (0, _config.default)("development" || "development"); // Initialize contract & set global variables
+const nearConfig = (0, _config.default)("development"); // Initialize contract & set global variables
 
 async function initContract() {
   // Initialize connection to the NEAR testnet
@@ -46969,7 +46968,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./assets/logo-black.svg":[["logo-black.eab7a939.svg","assets/logo-black.svg"],"assets/logo-black.svg"],"./assets/logo-white.svg":[["logo-white.7fec831f.svg","assets/logo-white.svg"],"assets/logo-white.svg"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../node_modules/axios/lib/helpers/bind.js":[function(require,module,exports) {
+},{"./assets/logo-white.svg":[["logo-white.7fec831f.svg","assets/logo-white.svg"],"assets/logo-white.svg"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../node_modules/axios/lib/helpers/bind.js":[function(require,module,exports) {
 'use strict';
 
 module.exports = function bind(fn, thisArg) {
@@ -48977,7 +48976,7 @@ function _interopRequireWildcard(obj, nodeInterop) { if (!nodeInterop && obj && 
 // import { NFTStorage, File } from "nft.storage";
 const {
   networkId
-} = (0, _config.default)("development" || "development"); //NFT storage quill api
+} = (0, _config.default)("development"); //NFT storage nxt50 api
 
 const nftStorageToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJkaWQ6ZXRocjoweEIyMTFiRjY2NTNjZTcyODEyZGI3MjRGMDkwODUzODM1QjBGOTE0MUUiLCJpc3MiOiJuZnQtc3RvcmFnZSIsImlhdCI6MTYzNzY0NDQzODQ0NSwibmFtZSI6InF1aWxsIn0.zCASQI4jOjLG98tCmI1TkJkJbHGyOS-BNClgQ8jwN2M";
 
@@ -48996,15 +48995,7 @@ const getImageBlob = async imageInput => {
 };
 
 const Login = () => {
-  return /*#__PURE__*/_react.default.createElement("main", null, /*#__PURE__*/_react.default.createElement("h1", null, "Welcome to NEAR!"), /*#__PURE__*/_react.default.createElement("p", null, "This is", " ", /*#__PURE__*/_react.default.createElement("a", {
-    href: "https://twitter.com/hashtag/NEARvember",
-    target: "_blank",
-    style: {
-      backgroundColor: "white",
-      borderRadius: "5px",
-      padding: "1px 5px"
-    }
-  }, "#NEARvember"), " ", "Challange 5."), /*#__PURE__*/_react.default.createElement("p", null, "In this app you can create your own image-based NFT!"), /*#__PURE__*/_react.default.createElement("p", null, "To make use of the NEAR blockchain, you need to sign in. The button below will sign you in using NEAR Wallet."), /*#__PURE__*/_react.default.createElement("p", {
+  return /*#__PURE__*/_react.default.createElement("main", null, /*#__PURE__*/_react.default.createElement("h1", null, "Welcome to NFTup!"), /*#__PURE__*/_react.default.createElement("p", null, "Now you can create your own NFT with Near Protocol"), /*#__PURE__*/_react.default.createElement("p", null, "To make use of the NEAR blockchain, you need to sign in. The button below will sign you in using NEAR Wallet."), /*#__PURE__*/_react.default.createElement("p", {
     style: {
       textAlign: "center",
       marginTop: "2.5em"
@@ -49085,7 +49076,7 @@ const App = () => {
     }
   }, /*#__PURE__*/_react.default.createElement("form", {
     onSubmit: onSubmit
-  }, /*#__PURE__*/_react.default.createElement("h1", null, "Mint your NFT!"), error && /*#__PURE__*/_react.default.createElement("p", {
+  }, /*#__PURE__*/_react.default.createElement("h1", null, "Mint your NFT"), error && /*#__PURE__*/_react.default.createElement("p", {
     style: {
       backgroundColor: "rgba(255, 0, 0, 0.3)",
       textAlign: "center",
@@ -49179,7 +49170,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "44055" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "41037" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

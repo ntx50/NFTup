@@ -1,5 +1,4 @@
-const CONTRACT_NAME = process.env.CONTRACT_NAME || "quill.imlang7.testnet";
-// const CONTRACT_NAME = "quill.imlang7.testnet";
+const CONTRACT_NAME = "imlang12.testnet";
 
 console.log("contractName", CONTRACT_NAME);
 

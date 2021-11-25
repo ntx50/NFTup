@@ -31,7 +31,7 @@ main {
 }
 
 h1 {
-  background-image: url(assets/logo-black.svg);
+  background-image: url("https://cdn3d.iconscout.com/3d/free/thumb/crypto-minting-3678196-3061791@0.png");
   background-position: center 1em;
   background-repeat: no-repeat;
   background-size: auto 1.5em;
